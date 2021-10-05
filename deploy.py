@@ -53,8 +53,6 @@ GradeStorage = w3.eth.contract(abi=abi, bytecode=bytecode)
 # get the latest transaction count
 nonce = w3.eth.getTransactionCount(my_address)
 
-print(nonce)
-
 # build the deploy transaction for the contract
 # the trans parameters get added to create a trans object
 transaction = GradeStorage.constructor().buildTransaction(
